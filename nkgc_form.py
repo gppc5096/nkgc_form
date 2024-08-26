@@ -29,7 +29,7 @@ class ChurchInfoApp(QWidget):
 
         # 구분 입력 필드
         self.category_input = QLineEdit(self)
-        self.category_input.setPlaceholderText('구분')
+        self.category_input.setPlaceholderText('시찰명을 입력하세요...')
         self.category_input.setFont(QFont('Arial', 10, QFont.Bold))
 
         # URL 입력 필드
@@ -56,7 +56,7 @@ class ChurchInfoApp(QWidget):
         button_layout.addWidget(self.clear_button)
 
         # 왼쪽 레이아웃에 요소 추가
-        left_layout.addWidget(QLabel('구분:'))
+        left_layout.addWidget(QLabel('시찰명:'))
         left_layout.addWidget(self.category_input)
         left_layout.addWidget(QLabel('URL:'))
         left_layout.addWidget(self.url_input)
